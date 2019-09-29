@@ -84,7 +84,7 @@
     'patterns': [
       {
         'name': 'variable.other.identifier.algol60'
-        'match': '\\b[A-Za-z][0-9A-Z_a-z]*\\b'
+        'match': '\\b[A-Za-z][0-9A-Za-z]*\\b'
       }
     ]
   'keywords':
@@ -98,18 +98,18 @@
     'patterns': [
       {
         'name': 'constant.numeric.decimal.algol60'
-        'match': '\\b(\\+|−)?([0-9]+(\\.[0-9]+)?(₁₀(\\+|−)?[0-9]+)?\\b|\\b\\.[0-9]+(₁₀(\\+|−)?[0-9]+)?\\b|\\b₁₀(\\+|−)?[0-9]+)\\b'
+        'match': '\\b(\\+|−|-)?([0-9]+(\\.[0-9]+)?((⏨|e)(\\+|−|-)?[0-9]+)?\\b|\\b\\.[0-9]+((⏨|e)(\\+|−|-)?[0-9]+)?\\b|\\b⏨(\\+|−|-)?[0-9]+)\\b'
       }
     ]
   'operators':
     'patterns': [
       {
-        'name': 'keyword.operator.comparison.algol60'
-        'match': '=|≠|<|≥|>|≤'
+        'name': 'keyword.operator.relational.algol60'
+        'match': '=|≠|<>|<|≥|>=|>|≤|<='
       }
       {
         'name': 'keyword.operator.logical.algol60'
-        'match': '≡|⊃|∨|∧|¬'
+        'match': '≡|<=>|⊃|=>|∨|\\\\/|∧|//\\\\|¬|~'
       }
       {
         'name': 'keyword.operator.assignment.algol60'
@@ -117,7 +117,7 @@
       }
       {
         'name': 'keyword.operator.arithmetic.algol60'
-        'match': '\\+|−|×|÷|/|↑'
+        'match': '\\+|−|-|×|\\*|/|÷|//|↑|\\*\\*'
       }
     ]
   'separators':
@@ -139,11 +139,11 @@
     'patterns': [
       {
         'name': 'constant.string.quoted.compound.algol60'
-        'begin': '`'
+        'begin': '⸢|`'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.string.begin.algol60'
-        'end': '\''
+        'end': '⸣|\''
         'endCaptures':
           '0':
             'name': 'punctuation.definition.string.end.algol60'

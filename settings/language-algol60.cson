@@ -1,0 +1,4 @@
+'.source.algol60':
+  'editor':
+    'commentStart': 'comment '
+    'commentEnd': ';'
