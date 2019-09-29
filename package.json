@@ -1,6 +1,6 @@
 {
   "name": "language-algol60",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Algol 60 language support in Atom",
   "keywords": [
     "language",
