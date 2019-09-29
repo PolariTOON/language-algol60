@@ -1,0 +1,15 @@
+{
+  "name": "language-algol60",
+  "version": "0.0.0",
+  "description": "Algol 60 language support in Atom",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/TrisTOON/language-algol60",
+  "author": "Tristan LE GODAIS",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

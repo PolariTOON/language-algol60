@@ -1,0 +1,156 @@
+'scopeName': 'source.algol60'
+'name': 'Algol 60'
+'fileTypes': [
+  'alg'
+  'algol'
+  'algol60'
+]
+'patterns': [
+  {
+    'include': '#comments'
+  }
+  {
+    'include': '#operators'
+  }
+  {
+    'include': '#separators'
+  }
+  {
+    'include': '#groups'
+  }
+  {
+    'include': '#keywords'
+  }
+  {
+    'include': '#constants'
+  }
+  {
+    'include': '#numbers'
+  }
+  {
+    'include': '#strings'
+  }
+  {
+    'include': '#identifiers'
+  }
+]
+'repository':
+  'comments':
+    'patterns': [
+      {
+        'contentName': 'comment.block.algol60'
+        'begin': '\\bcomment\\b'
+        'beginCaptures':
+          '0':
+            'name': 'keyword.control.algol60'
+        'end': '(?=;)'
+      }
+      # {
+      #   'contentName': 'comment.block.algol60'
+      #   'begin': '\\bend\\b'
+      #   'beginCaptures':
+      #     '0':
+      #       'name': 'keyword.control.algol60'
+      #   'end': '(?=;|\\b(Boolean|array|else|end|integer|own|procedure|real|switch)\\b)'
+      # }
+    ]
+  'constants':
+    'patterns': [
+      {
+        'name': 'constant.language.false.algol60'
+        'match': '\\bfalse\\b'
+      }
+      {
+        'name': 'constant.language.true.algol60'
+        'match': '\\btrue\\b'
+      }
+      {
+        'name': 'variable.language.function.algol60'
+        'match': '\\b(arctan|abs|cos|entier|exp|ln|sign|sin|sqrt)\\b'
+      }
+    ]
+  'groups':
+    'patterns': [
+      {
+        'name': 'meta.brace.round.algol60'
+        'match': '\\(|\\)'
+      }
+      {
+        'name': 'meta.brace.square.algol60'
+        'match': '\\[|\\]'
+      }
+    ]
+  'identifiers':
+    'patterns': [
+      {
+        'name': 'variable.other.identifier.algol60'
+        'match': '\\b[A-Za-z][0-9A-Z_a-z]*\\b'
+      }
+    ]
+  'keywords':
+    'patterns': [
+      {
+        'name': 'keyword.control.algol60'
+        'match': '\\b(Boolean|array|begin|do|else|end|for|go|if|integer|label|own|procedure|real|step|switch|string|then|to|until|value|while)\\b'
+      }
+    ]
+  'numbers':
+    'patterns': [
+      {
+        'name': 'constant.numeric.decimal.algol60'
+        'match': '\\b(\\+|−)?([0-9]+(\\.[0-9]+)?(₁₀(\\+|−)?[0-9]+)?\\b|\\b\\.[0-9]+(₁₀(\\+|−)?[0-9]+)?\\b|\\b₁₀(\\+|−)?[0-9]+)\\b'
+      }
+    ]
+  'operators':
+    'patterns': [
+      {
+        'name': 'keyword.operator.comparison.algol60'
+        'match': '=|≠|<|≥|>|≤'
+      }
+      {
+        'name': 'keyword.operator.logical.algol60'
+        'match': '≡|⊃|∨|∧|¬'
+      }
+      {
+        'name': 'keyword.operator.assignment.algol60'
+        'match': ':='
+      }
+      {
+        'name': 'keyword.operator.arithmetic.algol60'
+        'match': '\\+|−|×|÷|/|↑'
+      }
+    ]
+  'separators':
+    'patterns': [
+      {
+        'name': 'punctuation.separator.semicolon.algol60'
+        'match': ';'
+      }
+      {
+        'name': 'punctuation.separator.comma.algol60'
+        'match': ','
+      }
+      {
+        'name': 'punctuation.separator.colon.algol60'
+        'match': ':'
+      }
+    ]
+  'strings':
+    'patterns': [
+      {
+        'name': 'constant.string.quoted.compound.algol60'
+        'begin': '`'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.string.begin.algol60'
+        'end': '\''
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.string.end.algol60'
+        'patterns': [
+          {
+            'include': '#strings'
+          }
+        ]
+      }
+    ]
