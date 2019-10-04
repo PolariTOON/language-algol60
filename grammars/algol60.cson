@@ -1,6 +1,7 @@
 'scopeName': 'source.algol60'
 'name': 'Algol 60'
 'fileTypes': [
+  'a60'
   'alg'
   'algol'
   'algol60'
@@ -98,7 +99,7 @@
     'patterns': [
       {
         'name': 'constant.numeric.decimal.algol60'
-        'match': '\\b(\\+|−|-)?([0-9]+(\\.[0-9]+)?((⏨|e)(\\+|−|-)?[0-9]+)?\\b|\\b\\.[0-9]+((⏨|e)(\\+|−|-)?[0-9]+)?\\b|\\b⏨(\\+|−|-)?[0-9]+)\\b'
+        'match': '\\b(\\+|−|-)?([0-9]+(\\.[0-9]+)?((⏨|e)(\\+|−|-)?[0-9]+)?|\\.[0-9]+((⏨|e)(\\+|−|-)?[0-9]+)?|⏨(\\+|−|-)?[0-9]+)\\b'
       }
     ]
   'operators':
@@ -109,7 +110,7 @@
       }
       {
         'name': 'keyword.operator.logical.algol60'
-        'match': '≡|<=>|⊃|=>|∨|\\\\/|∧|//\\\\|¬|~'
+        'match': '≡|<=>|⊃|=>|∨|\\\\/|∧|/\\\\|¬|~'
       }
       {
         'name': 'keyword.operator.assignment.algol60'
