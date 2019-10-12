@@ -1,0 +1,96 @@
+'.source.algol60':
+  'if … then …':
+    'prefix': 'if'
+    'body': 'if ${1:condition} then ${2:begin\n\t$3\nend}$4'
+    'description': 'if-then construct'
+    'rightLabelHTML': 'if … then …'
+  'then …':
+    'prefix': 'then'
+    'body': 'then ${1:begin\n\t$2\nend}$3'
+    'description': 'then branch'
+    'rightLabelHTML': 'then …'
+  'else …':
+    'prefix': 'else'
+    'body': 'else ${1:begin\n\t$2\nend}$3'
+    'description': 'else branch'
+    'rightLabelHTML': 'else …'
+  'else if … then …':
+    'prefix': 'elif'
+    'body': 'else if ${1:condition} then ${2:begin\n\t$3\nend}$4'
+    'description': 'else-if branch'
+    'rightLabelHTML': 'else if … then …'
+  'for … := … do …':
+    'prefix': 'loop'
+    'body': 'for ${1:indexName} := ${2:indexValue} do ${3:begin\n\t$4\nend}$5'
+    'description': 'loop'
+    'rightLabelHTML': 'for … := … do …'
+  'for … := … while … do …':
+    'prefix': 'while'
+    'body': 'for ${1:indexName} := ${2:indexValue} while ${3:condition} do ${4:begin\n\t$5\nend}$6'
+    'description': 'while loop'
+    'rightLabelHTML': 'for … := … while … do …'
+  'while …':
+    'prefix': 'test'
+    'body': 'while ${1:condition}$2'
+    'description': 'while loop test'
+    'rightLabelHTML': 'while … '
+  'for … := … step … until … do …':
+    'prefix': 'for'
+    'body': 'for ${1:indexName} := ${2:min} step ${3:increment} until ${4:max} do ${5:begin\n\t$6\nend}$7'
+    'description': 'for loop'
+    'rightLabelHTML': 'for … := … step … until … do …'
+  '… step … until …':
+    'prefix': 'range'
+    'body': '${1:min} step ${2:increment} until ${3:max}$4'
+    'description': 'for loop range'
+    'rightLabelHTML': '… step … until …'
+  'do …':
+    'prefix': 'do'
+    'body': 'do ${1:begin\n\t$2\nend}$3'
+    'description': 'loop body'
+    'rightLabelHTML': 'do …'
+  'go to …':
+    'prefix': 'goto'
+    'body': 'go to ${1:labelName}$2'
+    'description': 'jump'
+    'rightLabelHTML': 'go to …'
+  'begin … end':
+    'prefix': 'begin'
+    'body': 'begin\n\t$1\nend$2'
+    'description': 'begin statement'
+    'rightLabelHTML': 'begin … end'
+  'Boolean …;':
+    'prefix': 'Boolean'
+    'body': 'Boolean ${1:variableName};$2'
+    'description': 'boolean declaration'
+    'rightLabelHTML': 'Boolean …;'
+  'integer …;':
+    'prefix': 'integer'
+    'body': 'integer ${1:variableName};$2'
+    'description': 'integer declaration'
+    'rightLabelHTML': 'integer …;'
+  'real …;':
+    'prefix': 'real'
+    'body': 'real ${1:variableName};$2'
+    'description': 'real declaration'
+    'rightLabelHTML': 'real …;'
+  'array …[… : …];':
+    'prefix': 'array'
+    'body': 'array ${1:variableName}[${2:min} : ${3:max}];$4'
+    'description': 'array declaration'
+    'rightLabelHTML': 'array …[… : …];'
+  'switch … := …;':
+    'prefix': 'switch'
+    'body': 'switch ${1:switchName} := ${2:labelName};$3'
+    'description': 'switch declaration'
+    'rightLabelHTML': 'switch … := …;'
+  'procedure …(…); value …; …;':
+    'prefix': 'procedure'
+    'body': 'procedure ${1:procedureName}${2:(${3:parameterName})};\n${4:value ${5:parameterName};\n}${6:${7:string} ${8:parameterName};\n}${9:begin\n\t${10}\nend};${11}'
+    'description': 'procedure declaration'
+    'rightLabelHTML': 'procedure …(…); value …; …;'
+  'value …;':
+    'prefix': 'value'
+    'body': 'value ${1:parameterName};$2'
+    'description': 'value declaration'
+    'rightLabelHTML': 'value …;'

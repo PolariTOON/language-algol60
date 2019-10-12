@@ -2,3 +2,6 @@
   'editor':
     'commentStart': 'comment '
     'commentEnd': ';'
+    'foldEndPattern': '^\\s*(\\)|\\]|\\bend\\b)'
+    'increaseIndentPattern': '(\\(|\\[|\\b(begin|do|else|for|if|then|step|until|while)\\b)\\s*$'
+    'decreaseIndentPattern': '^\\s*(\\)|\\]|\\b(do|else|end|then|step|until|while)\\b)'
