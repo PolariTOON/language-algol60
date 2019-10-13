@@ -86,7 +86,7 @@
     'rightLabelHTML': 'switch … := …;'
   'procedure …(…); value …; …;':
     'prefix': 'procedure'
-    'body': 'procedure ${1:procedureName}${2:(${3:parameterName})};\n${4:value ${5:parameterName};\n}${6:${7:string} ${8:parameterName};\n}${9:begin\n\t${10}\nend};${11}'
+    'body': 'procedure ${1:procedureName}${2:(${3:parameterName})};\n${4:value ${5:parameterName};\n}${6:${7:real} ${8:parameterName};\n}${9:begin\n\t${10}\nend};${11}'
     'description': 'procedure declaration'
     'rightLabelHTML': 'procedure …(…); value …; …;'
   'value …;':
@@ -94,3 +94,103 @@
     'body': 'value ${1:parameterName};$2'
     'description': 'value declaration'
     'rightLabelHTML': 'value …;'
+  'abs(…)':
+    'prefix': 'abs'
+    'body': 'abs(${1:E})$2'
+    'rightLabelHTML': 'abs(E:real):real'
+  'arctan(…)':
+    'prefix': 'arctan'
+    'body': 'arctan(${1:E})$2'
+    'rightLabelHTML': 'arctan(E:real):real'
+  'cos(…)':
+    'prefix': 'cos'
+    'body': 'cos(${1:E})$2'
+    'rightLabelHTML': 'cos(E:real):real'
+  'entier(…)':
+    'prefix': 'entier'
+    'body': 'entier(${1:E})$2'
+    'rightLabelHTML': 'entier(E:real):integer'
+  'epsilon':
+    'prefix': 'epsilon'
+    'body': 'epsilon$1'
+    'rightLabelHTML': 'epsilon():real'
+  'exp(…)':
+    'prefix': 'exp'
+    'body': 'exp(${1:E})$2'
+    'rightLabelHTML': 'exp(E:real):real'
+  'fault(…, …)':
+    'prefix': 'fault'
+    'body': 'fault(${1:str}, ${2:r})$3'
+    'rightLabelHTML': 'fault(str:string, r:real)'
+  'iabs(…)':
+    'prefix': 'iabs'
+    'body': 'iabs(${1:E})$2'
+    'rightLabelHTML': 'iabs(E:integer):integer'
+  'inchar(…, …, …)':
+    'prefix': 'inchar'
+    'body': 'inchar(${1:channel}, ${2:str}, ${3:int})$4'
+    'rightLabelHTML': 'inchar(channel:integer, str:string, int:integer)'
+  'ininteger(…)':
+    'prefix': 'ininteger'
+    'body': 'ininteger(${1:channel}, ${2:int})$3'
+    'rightLabelHTML': 'ininteger(channel:integer, int:integer)'
+  'inreal(…)':
+    'prefix': 'inreal'
+    'body': 'inreal(${1:channel}, ${2:re})$3'
+    'rightLabelHTML': 'inreal(channel:integer, re:real)'
+  'length(…)':
+    'prefix': 'length'
+    'body': 'length(${1:str})$2'
+    'rightLabelHTML': 'length(str:string):integer'
+  'ln(…)':
+    'prefix': 'ln'
+    'body': 'ln(${1:E})$2'
+    'rightLabelHTML': 'ln(E:real):real'
+  'maxint':
+    'prefix': 'maxint'
+    'body': 'maxint$1'
+    'rightLabelHTML': 'maxint():integer'
+  'maxreal':
+    'prefix': 'maxreal'
+    'body': 'maxreal$1'
+    'rightLabelHTML': 'maxreal():real'
+  'minreal':
+    'prefix': 'minreal'
+    'body': 'minreal$1'
+    'rightLabelHTML': 'minreal():real'
+  'outchar(…, …, …)':
+    'prefix': 'outchar'
+    'body': 'outchar(${1:channel}, ${2:str}, ${3:int})$4'
+    'rightLabelHTML': 'outchar(channel:integer, str:string, int:integer)'
+  'outinteger(…)':
+    'prefix': 'outinteger'
+    'body': 'outinteger(${1:channel}, ${2:int})$2'
+    'rightLabelHTML': 'outinteger(channel:integer, int:integer)'
+  'outreal(…)':
+    'prefix': 'outreal'
+    'body': 'outreal(${1:channel}, ${2:re})$2'
+    'rightLabelHTML': 'outreal(channel:integer, re:real)'
+  'outstring(…)':
+    'prefix': 'outstring'
+    'body': 'outstring(${1:channel}, ${2:str})$3'
+    'rightLabelHTML': 'outstring(channel:integer, str:string)'
+  'outterminator(…)':
+    'prefix': 'outterminator'
+    'body': 'outterminator(${1:channel})$2'
+    'rightLabelHTML': 'outterminator(channel:integer)'
+  'sign(…)':
+    'prefix': 'sign'
+    'body': 'sign(${1:E})$2'
+    'rightLabelHTML': 'sign(E:real):integer'
+  'sin(…)':
+    'prefix': 'sin'
+    'body': 'sin(${1:E})$2'
+    'rightLabelHTML': 'sin(E:real):real'
+  'sqrt(…)':
+    'prefix': 'sqrt'
+    'body': 'sqrt(${1:E})$2'
+    'rightLabelHTML': 'sqrt(E:real):real'
+  'stop':
+    'prefix': 'stop'
+    'body': 'stop$1'
+    'rightLabelHTML': 'stop()'

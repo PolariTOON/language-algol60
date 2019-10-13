@@ -67,7 +67,7 @@
       }
       {
         'name': 'variable.language.function.algol60'
-        'match': '\\b(arctan|abs|cos|entier|exp|ln|sign|sin|sqrt)\\b'
+        'match': '\\b(abs|arctan|cos|entier|epsilon|exp|fault|iabs|inchar|ininteger|inreal|length|ln|maxint|maxreal|minreal|outchar|outinteger|outreal|outstring|outterminator|sign|sin|sqrt|stop)\\b'
       }
     ]
   'groups':
@@ -92,7 +92,7 @@
     'patterns': [
       {
         'name': 'keyword.control.algol60'
-        'match': '\\b(Boolean|array|begin|do|else|end|for|go|if|integer|label|own|procedure|real|step|switch|string|then|to|until|value|while)\\b'
+        'match': '\\b(Boolean|array|begin|do|else|end|for|go|goto|if|integer|label|own|procedure|real|step|switch|string|then|to|until|value|while)\\b'
       }
     ]
   'numbers':
