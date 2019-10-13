@@ -66,6 +66,26 @@
         'match': '\\btrue\\b'
       }
       {
+        'name': 'storage.type.bool.tiger'
+        'match': '\\bBoolean\\b'
+      }
+      {
+        'name': 'storage.type.int.tiger'
+        'match': '\\binteger\\b'
+      }
+      {
+        'name': 'storage.type.re.tiger'
+        'match': '\\breal\\b'
+      }
+      {
+        'name': 'storage.type.str.tiger'
+        'match': '\\bstring\\b'
+      }
+      {
+        'name': 'storage.type.lbl.tiger'
+        'match': '\\blabel\\b'
+      }
+      {
         'name': 'variable.language.function.algol60'
         'match': '\\b(abs|arctan|cos|entier|epsilon|exp|fault|iabs|inchar|ininteger|inreal|length|ln|maxint|maxreal|minreal|outchar|outinteger|outreal|outstring|outterminator|sign|sin|sqrt|stop)\\b'
       }
@@ -92,7 +112,7 @@
     'patterns': [
       {
         'name': 'keyword.control.algol60'
-        'match': '\\b(Boolean|array|begin|do|else|end|for|go|goto|if|integer|label|own|procedure|real|step|switch|string|then|to|until|value|while)\\b'
+        'match': '\\b(array|begin|do|else|end|for|go|goto|if|own|procedure|step|switch|then|to|until|value|while)\\b'
       }
     ]
   'numbers':
