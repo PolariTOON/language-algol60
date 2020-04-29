@@ -1,0 +1,187 @@
+{
+	"scopeName": "source.algol60",
+	"name": "Algol 60",
+	"fileTypes": [
+		"a60",
+		"alg",
+		"algol",
+		"algol60"
+	],
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#separators"
+		},
+		{
+			"include": "#groups"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#identifiers"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"contentName": "comment.block.algol60",
+					"begin": "\\bcomment\\b",
+					"beginCaptures": {
+						"0": {
+							"name": "keyword.control.algol60"
+						}
+					},
+					"end": "(?=;)"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.false.algol60",
+					"match": "\\bfalse\\b"
+				},
+				{
+					"name": "constant.language.true.algol60",
+					"match": "\\btrue\\b"
+				},
+				{
+					"name": "storage.type.bool.tiger",
+					"match": "\\bBoolean\\b"
+				},
+				{
+					"name": "storage.type.int.tiger",
+					"match": "\\binteger\\b"
+				},
+				{
+					"name": "storage.type.re.tiger",
+					"match": "\\breal\\b"
+				},
+				{
+					"name": "storage.type.str.tiger",
+					"match": "\\bstring\\b"
+				},
+				{
+					"name": "storage.type.lbl.tiger",
+					"match": "\\blabel\\b"
+				},
+				{
+					"name": "variable.language.function.algol60",
+					"match": "\\b(abs|arctan|cos|entier|epsilon|exp|fault|iabs|inchar|ininteger|inreal|length|ln|maxint|maxreal|minreal|outchar|outinteger|outreal|outstring|outterminator|sign|sin|sqrt|stop)\\b"
+				}
+			]
+		},
+		"groups": {
+			"patterns": [
+				{
+					"name": "meta.brace.round.algol60",
+					"match": "\\(|\\)"
+				},
+				{
+					"name": "meta.brace.square.algol60",
+					"match": "\\[|\\]"
+				}
+			]
+		},
+		"identifiers": {
+			"patterns": [
+				{
+					"name": "variable.other.identifier.algol60",
+					"match": "\\b[A-Za-z][0-9A-Za-z]*\\b"
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.algol60",
+					"match": "\\b(array|begin|do|else|end|for|go|goto|if|own|procedure|step|switch|then|to|until|value|while)\\b"
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.decimal.algol60",
+					"match": "\\b(\\+|−|-)?([0-9]+(\\.[0-9]+)?((⏨|e)(\\+|−|-)?[0-9]+)?|\\.[0-9]+((⏨|e)(\\+|−|-)?[0-9]+)?|⏨(\\+|−|-)?[0-9]+)\\b"
+				}
+			]
+		},
+		"operators": {
+			"patterns": [
+				{
+					"name": "keyword.operator.relational.algol60",
+					"match": "=|≠|<>|<|≥|>=|>|≤|<="
+				},
+				{
+					"name": "keyword.operator.logical.algol60",
+					"match": "≡|<=>|⊃|=>|∨|\\\\/|∧|/\\\\|¬|~"
+				},
+				{
+					"name": "keyword.operator.assignment.algol60",
+					"match": ":="
+				},
+				{
+					"name": "keyword.operator.arithmetic.algol60",
+					"match": "\\+|−|-|×|\\*|/|÷|//|↑|\\*\\*"
+				}
+			]
+		},
+		"separators": {
+			"patterns": [
+				{
+					"name": "punctuation.separator.semicolon.algol60",
+					"match": ";"
+				},
+				{
+					"name": "punctuation.separator.comma.algol60",
+					"match": ","
+				},
+				{
+					"name": "punctuation.separator.colon.algol60",
+					"match": ":"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.compound.algol60",
+					"begin": "⸢|`",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.algol60"
+						}
+					},
+					"end": "⸣|'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.algol60"
+						}
+					},
+					"patterns": [
+						{
+							"include": "#strings"
+						}
+					]
+				}
+			]
+		}
+	}
+}
