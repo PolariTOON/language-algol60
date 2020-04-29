@@ -159,7 +159,7 @@
   'strings':
     'patterns': [
       {
-        'name': 'constant.string.quoted.compound.algol60'
+        'name': 'string.quoted.compound.algol60'
         'begin': '⸢|`'
         'beginCaptures':
           '0':

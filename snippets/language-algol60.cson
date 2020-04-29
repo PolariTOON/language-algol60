@@ -1,4 +1,9 @@
 '.source.algol60':
+  'comment …;':
+    'prefix' : 'comment'
+    'body': 'comment $1;$2'
+    'description': 'comment'
+    'rightLabelHTML': '<span class="syntax--keyword syntax--control syntax--algol60">comment</span> …<span class="syntax--punctuation syntax--separator syntax--semicolon syntax--algol60">;</span>'
   'if … then …':
     'prefix': 'if'
     'body': 'if ${1:condition} then ${2:begin\n\t$3\nend}$4'
@@ -76,7 +81,7 @@
     'rightLabelHTML': '<span class="syntax--keyword syntax--control syntax--algol60">switch</span> … <span class="syntax--keyword syntax--operator syntax--assignment syntax--algol60">:=</span> …<span class="syntax--punctuation syntax--separator syntax--semicolon syntax--algol60">;</span>'
   'procedure …(…); value …; …;':
     'prefix': 'procedure'
-    'body': 'procedure ${1:procedureName}${2:(${3:parameterName})};\n${4:value ${5:parameterName};\n}${6:${7:real} ${8:parameterName};\n}${9:begin\n\t${10}\nend};${11}'
+    'body': 'procedure ${1:procedureName}${2:(${3:parameterName})}; ${4:value ${5:parameterName}; }${6:${7:real} ${8:parameterName}; }${9:begin\n\t${10}\nend};${11}'
     'description': 'procedure declaration'
     'rightLabelHTML': '<span class="syntax--keyword syntax--control syntax--algol60">procedure</span> …<span class="syntax--meta syntax--brace syntax--round syntax--algol60">(</span>…<span class="syntax--meta syntax--brace syntax--round syntax--algol60">)</span><span class="syntax--punctuation syntax--separator syntax--semicolon syntax--algol60">;</span> <span class="syntax--keyword syntax--control syntax--algol60">value</span> …; …<span class="syntax--punctuation syntax--separator syntax--semicolon syntax--algol60">;</span>'
   'value …;':
