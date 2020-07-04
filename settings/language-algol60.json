@@ -16,6 +16,7 @@
 	},
 	"folding": {
 		"markers": {
+			"start": "(\\(|\\[|\\bbegin\\b)\\s*$",
 			"end": "^\\s*(\\)|\\]|\\bend\\b)"
 		}
 	},
