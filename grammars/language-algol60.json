@@ -62,23 +62,23 @@
 					"match": "\\btrue\\b"
 				},
 				{
-					"name": "storage.type.bool.tiger",
+					"name": "storage.type.bool.algol60",
 					"match": "\\bBoolean\\b"
 				},
 				{
-					"name": "storage.type.int.tiger",
+					"name": "storage.type.int.algol60",
 					"match": "\\binteger\\b"
 				},
 				{
-					"name": "storage.type.re.tiger",
+					"name": "storage.type.re.algol60",
 					"match": "\\breal\\b"
 				},
 				{
-					"name": "storage.type.str.tiger",
+					"name": "storage.type.str.algol60",
 					"match": "\\bstring\\b"
 				},
 				{
-					"name": "storage.type.lbl.tiger",
+					"name": "storage.type.lbl.algol60",
 					"match": "\\blabel\\b"
 				},
 				{
