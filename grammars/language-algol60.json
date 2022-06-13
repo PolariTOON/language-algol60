@@ -135,7 +135,7 @@
 				},
 				{
 					"name": "keyword.operator.assignment.algol60",
-					"match": ":="
+					"match": "≔|:="
 				},
 				{
 					"name": "keyword.operator.arithmetic.algol60",
