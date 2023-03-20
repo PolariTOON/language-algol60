@@ -1,7 +1,9 @@
 {
   "name": "language-algol60",
   "version": "0.5.3",
+  "displayName": "Algol 60 syntax highlighter",
   "description": "Algol 60 language support in Atom, Pulsar and Visual Studio Code",
+  "icon": "./logotypes/language-algol60-200x200.png",
   "keywords": [
     "language",
     "grammar"
